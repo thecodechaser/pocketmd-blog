@@ -7,7 +7,7 @@ const Head = styled.header`
 `
 
 const Button = styled.button`
-  border-radius: 15px;
+  border-radius: 14px;
   padding: 10px 10px;
   box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
