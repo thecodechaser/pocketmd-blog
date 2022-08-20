@@ -24,3 +24,8 @@ a {
     /* background: black; */
   }
 }
+
+.firstSec {
+  display: flex;
+  gap: 50px;
+}

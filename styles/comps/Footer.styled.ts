@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Foot = styled.footer`
   display: flex;
   background-color: #000;
-  gap: 50px;
+  justify-content: space-between;
   padding: 50px 20px;
 `
 
@@ -33,4 +33,8 @@ const Para = styled.p`
   font-weight: 600;
 `
 
-export { Foot, Div, Links, Anchor, Para }
+const Card = styled.div`
+display: flex;
+`
+
+export { Foot, Div, Links, Anchor, Para, Card }
