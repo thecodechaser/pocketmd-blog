@@ -1,8 +1,13 @@
+import Link from 'next/link'
+import { Head } from '../styles/comps/Header.styled'
+
 const Header = () => {
   return (
-    <header>
-      <a href="/">PocketMD Blog</a>
-    </header>
+    <Head>
+      <Link href="/">
+        <a>PocketMD Blog</a>
+      </Link>
+    </Head>
   )
 }
 
