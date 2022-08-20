@@ -4,16 +4,18 @@ import Image from 'next/image'
 const Footer = () => {
   return (
     <Foot>
-      <Image src="/logo.svg" alt="hamburger" width="100" height="100" />
+      <Image src="/logo.svg" alt="hamburger" width="150" height="100" />
 
       <Div>
         <Links>
-          <Anchor>Hello</Anchor>
-          <Anchor>Hello</Anchor>
-          <Anchor>Hello</Anchor>
+          <Anchor>Term & Conditions</Anchor>
+          <Anchor>Privacy Policy</Anchor>
+          <Anchor>SitemapCCPA: Do Not Sell My Personal Information</Anchor>
         </Links>
 
-        <Para> adaadadadgbghghb</Para>
+        <Para>
+          © 2022 Created by Ranjeet Singh for PocketMD. All rights reserved
+        </Para>
       </Div>
     </Foot>
   )
