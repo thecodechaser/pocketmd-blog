@@ -29,3 +29,19 @@ a {
   display: flex;
   gap: 50px;
 }
+
+.pmdLink {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: -4px;
+}
+
+.pmdLink:hover {
+  color: #000;
+}
+
+.pmdLink2 {
+  font-size: 13px;
+  color: #757575;
+  font-weight: 600;
+}

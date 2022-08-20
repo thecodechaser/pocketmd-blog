@@ -4,7 +4,7 @@ const Foot = styled.footer`
   display: flex;
   background-color: #000;
   justify-content: space-between;
-  padding: 50px 20px;
+  padding: 100px 20px;
 `
 
 const Div = styled.div`
@@ -34,7 +34,20 @@ const Para = styled.p`
 `
 
 const Card = styled.div`
-display: flex;
+  display: flex;
+  gap: 10px;
+  color: #757575;
+  margin-right: 20px;
+  background-color: #1C1C1C;
+  padding: 1px 10px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px 1px rgba(0,0,0,.05);;
+  transition: 0.3s;
+  color: #fff;
+  &:hover {
+    background-color: #fff;
+  }
+
 `
 
 export { Foot, Div, Links, Anchor, Para, Card }
