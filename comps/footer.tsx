@@ -1,9 +1,7 @@
-import { Foot } from "../styles/comps/Footer.styled"
+import { Foot } from '../styles/comps/Footer.styled'
 
 const Footer = () => {
-  return (
-   <Foot> Hello from footer</Foot>
-  )
+  return <Foot> Hello from footer</Foot>
 }
 
 export default Footer
