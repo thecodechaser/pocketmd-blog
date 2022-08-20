@@ -8,6 +8,8 @@ import { ApolloClient, InMemoryCache, gql } from '@apollo/client'
 
 interface PostsProps {
   posts: {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    map: any
     author: string
     createdAt: string
     id: string
@@ -27,7 +29,7 @@ const Home: NextPage<PostsProps> = (props) => {
     <div className={styles.container}>
       <Header />
       <Hero />
-      <Posts posts={posts}/>
+      <Posts posts={posts} />
       <Footer />
     </div>
   )
