@@ -8,14 +8,14 @@ const Div = styled.div`
 `
 
 const H1 = styled.h1`
-font-size: 80px;
+  font-size: 80px;
 `
 
 const P = styled.p`
-font-size: 25px;
-font-weight: 500;
-margin-top: -50px;
-width: 60%;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: -50px;
+  width: 60%;
 `
 
 export { Div, H1, P }
