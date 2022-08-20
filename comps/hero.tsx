@@ -1,5 +1,7 @@
+import { Div } from '../styles/comps/Hero.styled'
+
 const Hero = () => {
-  return <p>Hello from hero</p>
+  return <Div>Hello from hero</Div>
 }
 
-export default Hero;
+export default Hero
