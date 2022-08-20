@@ -16,6 +16,7 @@ const Button = styled.button`
   font-weight: bold;
   &:hover {
     background-color: #f0f0f0;
+    cursor: pointer;
   }
 `
 
@@ -27,6 +28,7 @@ const Div = styled.div`
 const Logo = styled.a`
   font-size: 25px;
   font-weight: bolder;
+  cursor: pointer;
 `
 
 export { Head, Button, Div, Logo }
