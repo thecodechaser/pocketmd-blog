@@ -9,19 +9,19 @@ const Head = styled.header`
 const Button = styled.button`
   border-radius: 15px;
   padding: 10px 10px;
-  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   background-color: #fff;
   border: 1px solid #fff;
   font-weight: bold;
   &:hover {
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
   }
 `
 
 const Div = styled.div`
-display: flex;
-gap: 25px;
+  display: flex;
+  gap: 25px;
 `
 
 const Logo = styled.a`

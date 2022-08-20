@@ -8,17 +8,17 @@ const Header = () => {
       <Link href="/">
         <Logo>PocketMD Blog</Logo>
       </Link>
-      
-      <Div className='div2'>
-      <Button>APPOINTMENTS v</Button>
-      <Link href="/">
-        <Image
-          src="/hamburger-button.png"
-          alt="hamburger"
-          width="35"
-          height="1"
-        />
-      </Link>
+
+      <Div className="div2">
+        <Button>APPOINTMENTS v</Button>
+        <Link href="/">
+          <Image
+            src="/hamburger-button.png"
+            alt="hamburger"
+            width="35"
+            height="1"
+          />
+        </Link>
       </Div>
     </Head>
   )
