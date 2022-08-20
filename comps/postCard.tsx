@@ -1,5 +1,8 @@
 import type { NextPage } from 'next'
-import {Info} from '../styles/comps/PostCard.styled'
+import Link from 'next/link'
+import { Info, Button } from '../styles/comps/PostCard.styled'
+import React, { useState, useEffect } from 'react';
+import Axios from 'axios';
 
 interface PostProps {
   post: {
@@ -17,14 +20,28 @@ interface PostProps {
 }
 
 const PostCard: NextPage<PostProps> = (props) => {
-  const { post }: PostProps = props
+  const { post }: PostProps = props;
+  const [image, setImage] = useState();
+
+  useEffect(() => {
+    async function myFunction() {
+      return Axios.get(` https://jsonlink.io/api/extract?url=${post.url}`);
+    }
+   
+    myFunction().then(
+      function(value) { setImage(value.data.images[0]) },
+    );
+  }, );
+  
+
+  console.log(image)
   return (
     <div>
-      <div>
-
-      </div>
+      <div><img src={image} alt="preview" height="200" width="200"/></div>
       <Info>
         <h3>{post.title}</h3>
+        <p>{post.text}</p>
+        <Link href="/"><Button>READ THIS ARTICLE</Button></Link>
       </Info>
     </div>
   )
