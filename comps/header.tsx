@@ -1,5 +1,9 @@
 const Header = () => {
-  return <p>Hello From header</p>
+  return (
+    <header>
+      <a href="/">PocketMD Blog</a>
+    </header>
+  )
 }
 
-export default Header;
+export default Header
