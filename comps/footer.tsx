@@ -1,5 +1,9 @@
+import { Foot } from "../styles/comps/Footer.styled"
+
 const Footer = () => {
-  return <p>Hello from footer</p>
+  return (
+   <Foot> Hello from footer</Foot>
+  )
 }
 
 export default Footer

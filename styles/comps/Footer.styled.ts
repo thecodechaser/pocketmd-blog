@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-const Foot =  styled.footer`
-`
+const Foot = styled.footer``
 
-export {Foot}
+export { Foot }
