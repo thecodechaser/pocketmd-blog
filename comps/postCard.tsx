@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import {Info} from '../styles/comps/PostCard.styled'
 
 interface PostProps {
   post: {
@@ -18,8 +19,15 @@ interface PostProps {
 const PostCard: NextPage<PostProps> = (props) => {
   const { post }: PostProps = props
   return (
-    <p>{post.author}</p>
+    <div>
+      <div>
+
+      </div>
+      <Info>
+        <h3>{post.title}</h3>
+      </Info>
+    </div>
   )
 }
 
-export default PostCard;
+export default PostCard
