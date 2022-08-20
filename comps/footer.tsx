@@ -29,9 +29,9 @@ const Footer = () => {
       <div className="secondSec">
         <Card>
           <Image src="/logo.svg" alt="hamburger" width="80" height="70" />
-          <div className='cardDiv'>
-            <p className='pmdLink'>PocketMD</p>
-            <a className='pmdLink2'>visit pocketmd.ca</a>
+          <div className="cardDiv">
+            <p className="pmdLink">PocketMD</p>
+            <a className="pmdLink2">visit pocketmd.ca</a>
           </div>
         </Card>
       </div>

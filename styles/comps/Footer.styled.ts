@@ -38,16 +38,15 @@ const Card = styled.div`
   gap: 10px;
   color: #757575;
   margin-right: 20px;
-  background-color: #1C1C1C;
+  background-color: #1c1c1c;
   padding: 1px 10px;
   border-radius: 20px;
-  box-shadow: 2px 2px 8px 1px rgba(0,0,0,.05);;
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.05);
   transition: 0.3s;
   color: #fff;
   &:hover {
     background-color: #fff;
   }
-
 `
 
 export { Foot, Div, Links, Anchor, Para, Card }
