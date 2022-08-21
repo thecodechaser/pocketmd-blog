@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const P = styled.p`
-margin-top: -5px;
+  margin-top: -5px;
   padding-top: 100px;
   color: #cc835c;
   text-align: center;
@@ -14,7 +14,8 @@ const H2 = styled.h2`
 `
 
 const HR = styled.div`
-border-bottom: 1px solid #EEE2D7;
+  border-bottom: 3px solid #eee2d7;
+  margin-bottom: 60px;
 `
 
 export { P, H2, HR }

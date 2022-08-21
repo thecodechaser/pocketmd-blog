@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
-import { Main, Info, Button, H3, P } from '../styles/comps/PostCard.styled'
+import { Main, Info, Button, H3, P, HR,Secondary } from '../styles/comps/PostCard.styled'
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios'
 
@@ -35,6 +35,7 @@ const PostCard: NextPage<PostProps> = (props) => {
 
   return (
     <Main>
+      <Secondary>
       <div>
         <img src={image} alt="preview" height="400" width="420" />
       </div>
@@ -45,6 +46,8 @@ const PostCard: NextPage<PostProps> = (props) => {
           <Button>READ THIS ARTICLE</Button>
         </Link>
       </Info>
+      </Secondary>
+      <HR></HR>
     </Main>
   )
 }
