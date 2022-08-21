@@ -11,15 +11,15 @@ import Link from 'next/link'
 const Details = () => {
   const [image, setImage] = useState()
   const state = useAppContext()
-  const state2 = useAppContext2();
+  const state2 = useAppContext2()
   const router = useRouter()
   const ID = router.query.id
   let post = state.filter(
     (element: { id: string | string[] | undefined }) => element.id == ID
   )
 
-  if(post.length ==0) {
-     post = state2.filter(
+  if (post.length == 0) {
+    post = state2.filter(
       (element: { id: string | string[] | undefined }) => element.id == ID
     )
   }
