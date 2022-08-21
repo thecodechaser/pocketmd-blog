@@ -41,7 +41,7 @@ const PostCard: NextPage<PostProps> = (props) => {
     })
   })
 
- return (
+  return (
     <Main>
       <Secondary>
         <div>
@@ -50,11 +50,11 @@ const PostCard: NextPage<PostProps> = (props) => {
         <Info>
           <H3>{post.title}</H3>
           <P>{post.text}</P>
-          <Link href={{
-
-          pathname: `/details/${post.id}`,
-        }
-          }>
+          <Link
+            href={{
+              pathname: `/details/${post.id}`,
+            }}
+          >
             <Button>READ THIS ARTICLE</Button>
           </Link>
         </Info>

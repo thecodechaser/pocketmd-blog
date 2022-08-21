@@ -54,3 +54,13 @@ a {
   display: flex;
   justify-content: center;
 }
+
+.detailsLinkC {
+  /* font-size: 50px;
+  font-weight: 600;
+  
+  cursor: pointer;
+  color: blue; */
+  border: 2px solid red;
+  margin-bottom: 100px;;
+}
