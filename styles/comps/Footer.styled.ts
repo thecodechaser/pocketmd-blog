@@ -5,6 +5,10 @@ const Foot = styled.footer`
   background-color: #000;
   justify-content: space-between;
   padding: 100px 20px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 `
 
 const Div = styled.div`
@@ -16,6 +20,9 @@ const Div = styled.div`
 const Links = styled.div`
   display: flex;
   gap: 20px;
+  @media (max-width: 768px) {
+    gap: 10px;
+  }
 `
 
 const Anchor = styled.a`

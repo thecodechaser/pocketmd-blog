@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Head, Div, Button, Logo } from '../styles/comps/Header.styled'
 import Image from 'next/image'
+import DarkMode from './darkMode'
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
       <Link href="/">
         <Logo>PocketMD Blog</Logo>
       </Link>
-
+      <DarkMode />
       <Div className="div2">
         <Button>APPOINTMENTS v</Button>
         <Link href="/">

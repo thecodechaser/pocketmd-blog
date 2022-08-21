@@ -18,6 +18,9 @@ const Button = styled.button`
     background-color: #f0f0f0;
     cursor: pointer;
   }
+  @media (max-width: 768px) {
+    padding: 5px 5px;
+  }
 `
 
 const Div = styled.div`
@@ -29,6 +32,9 @@ const Logo = styled.a`
   font-size: 25px;
   font-weight: bolder;
   cursor: pointer;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `
 
 export { Head, Button, Div, Logo }

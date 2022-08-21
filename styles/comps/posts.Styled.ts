@@ -11,6 +11,9 @@ const P = styled.p`
 const H2 = styled.h2`
   font-size: 50px;
   text-align: center;
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
 `
 
 const HR = styled.div`

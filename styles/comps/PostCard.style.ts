@@ -4,11 +4,17 @@ const Info = styled.div``
 
 const Main = styled.div`
   padding: 0px 130px;
+  @media (max-width: 768px) {
+    padding: 0px 30px;
+  }
 `
 
 const Secondary = styled.div`
   display: flex;
   gap: 50px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 const H3 = styled.h3`
