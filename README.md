@@ -45,7 +45,7 @@
 
 ## Live version
 
-[PocketMD Blog](https://book-appointments-frontend.netlify.app)
+[PocketMD Blog](https://pocketmd-blog.herokuapp.com/)
 
 ## Getting Started
 
