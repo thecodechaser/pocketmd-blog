@@ -13,7 +13,7 @@ const Header = () => {
         <Button>APPOINTMENTS v</Button>
         <Link href="/">
           <Image
-            src="/hamburger-button.png"
+            src="/hamburger-icon.png"
             alt="hamburger"
             width="35"
             height="1"
