@@ -15,9 +15,9 @@ a {
   box-sizing: border-box;
 }
 
- /* Drak theme */
+/* Drak theme */
 
- /* 1 */
+/* 1 */
 :root {
   --font-color: #333;
   --background-color: #eee;
@@ -25,7 +25,7 @@ a {
 }
 
 /* 2 */
-[data-theme="dark"] {
+[data-theme='dark'] {
   --font-color: #eee;
   --background-color: #333;
   --link-color: lightblue;
@@ -74,7 +74,7 @@ body {
 .slider:before {
   background-color: #fff;
   bottom: 4px;
-  content: "";
+  content: '';
   height: 26px;
   left: 4px;
   position: absolute;
