@@ -1,4 +1,5 @@
 import { useAppContext } from '../../context/state'
+import { useAppContext2 } from '../../context/stateTwo'
 import Footer from '../../comps/footer'
 import Header from '../../comps/header'
 import { useRouter } from 'next/router'
@@ -10,11 +11,18 @@ import Link from 'next/link'
 const Details = () => {
   const [image, setImage] = useState()
   const state = useAppContext()
+  const state2 = useAppContext2();
   const router = useRouter()
   const ID = router.query.id
-  const post = state.filter(
+  let post = state.filter(
     (element: { id: string | string[] | undefined }) => element.id == ID
   )
+
+  if(post.length ==0) {
+     post = state2.filter(
+      (element: { id: string | string[] | undefined }) => element.id == ID
+    )
+  }
 
   async function myFunction() {
     return Axios.get(` https://jsonlink.io/api/extract?url=${post[0].url}`)

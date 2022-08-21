@@ -16,11 +16,11 @@ export function AppWrapper2({ children }) {
         cache: new InMemoryCache(),
       })
 
-      for (let i = 0; i < 17; i++) {
+      for (let i = 1; i < 4; i++) {
         const { data } = await client.query({
           query: gql`
             query {
-              retrievePageArticles(page: 8) {
+              retrievePageArticles(page: 9) {
                 id
                 author
                 createdAt
