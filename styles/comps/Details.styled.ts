@@ -23,6 +23,7 @@ const P = styled.p`
   font-size: 15px;
   font-weight: 600;
   text-align: center;
+  margin: 50px 0;
 `
 
 const A = styled.a`
