@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { P, H2 } from '../styles/comps/Posts.styled'
+import { P, H2, HR } from '../styles/comps/Posts.styled'
 import PostCard from './postCard'
 
 interface PostsProps {
@@ -22,9 +22,10 @@ interface PostsProps {
 const Posts: NextPage<PostsProps> = (props) => {
   const { posts }: PostsProps = props
   return (
-    <div>
+    <div className="postMainC">
       <P>Discover more about mens health</P>
       <H2>Explore the PocketMD Journal</H2>
+      <HR></HR>
       {posts.map(
         (post: {
           id: string
