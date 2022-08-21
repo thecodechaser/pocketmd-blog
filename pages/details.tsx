@@ -1,10 +1,16 @@
 import { useAppContext } from '../context/state'
+import Footer from '../comps/footer'
+import Header from '../comps/header'
 
 const Details = () => {
   const state = useAppContext()
-  console.log(state)
 
-  if (state) return <p>Hello{state.posts[0].author}</p>
+  if (state) return (
+    <div>
+      <Header />
+      <Footer />
+    </div>
+  )
 }
 
 export default Details
