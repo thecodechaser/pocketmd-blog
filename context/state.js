@@ -1,21 +1,20 @@
 // context/state.js
-import { createContext, useContext } from 'react';
+import { createContext, useContext } from 'react'
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client'
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 
-const AppContext = createContext();
+const AppContext = createContext()
 
 export function AppWrapper({ children }) {
-  const [sharedState, setSharedState] = useState();
+  const [sharedState, setSharedState] = useState()
 
-
-  useEffect(() =>{
+  useEffect(() => {
     async function fetchData() {
       const client = new ApolloClient({
         uri: 'https://gql-technical-assignment.herokuapp.com/graphql',
         cache: new InMemoryCache(),
       })
-    
+
       const { data } = await client.query({
         query: gql`
           query {
@@ -33,18 +32,16 @@ export function AppWrapper({ children }) {
           }
         `,
       })
-      setSharedState({posts: data.firstPageArticles})
+      setSharedState({ posts: data.firstPageArticles })
     }
     fetchData()
-  },[])
+  }, [])
 
   return (
-    <AppContext.Provider value={sharedState}>
-      {children}
-    </AppContext.Provider>
-  );
+    <AppContext.Provider value={sharedState}>{children}</AppContext.Provider>
+  )
 }
 
 export function useAppContext() {
-  return useContext(AppContext);
+  return useContext(AppContext)
 }
