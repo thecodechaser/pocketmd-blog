@@ -14,7 +14,7 @@ const Home = () => {
       <div className={styles.container}>
         <Header />
         <Hero />
-        <Posts posts={state} posts2={state2}/>
+        <Posts posts={state} posts2={state2} />
         <Footer />
       </div>
     )

@@ -16,7 +16,7 @@ interface PostsProps {
     updatedAt: string
     url: string
     __typename: string
-  },
+  }
 
   posts2: {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -36,7 +36,7 @@ interface PostsProps {
 
 const Posts: NextPage<PostsProps> = (props) => {
   const { posts }: PostsProps = props
-  const {posts2} : PostsProps = props
+  const { posts2 }: PostsProps = props
   return (
     <div className="postMainC">
       <P>Discover more about mens health</P>
