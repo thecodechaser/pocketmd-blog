@@ -8,7 +8,7 @@ import {
   P,
   HR,
   Secondary,
-} from '../styles/comps/PostCard.Styled'
+} from '../styles/comps/PostCard.style'
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios'
 
