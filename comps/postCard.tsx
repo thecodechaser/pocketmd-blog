@@ -50,7 +50,11 @@ const PostCard: NextPage<PostProps> = (props) => {
         <Info>
           <H3>{post.title}</H3>
           <P>{post.text}</P>
-          <Link href="/">
+          <Link
+            href={{
+              pathname: `/details/${post.id}`,
+            }}
+          >
             <Button>READ THIS ARTICLE</Button>
           </Link>
         </Info>
