@@ -6,8 +6,8 @@ import { useEffect, useState } from 'react'
 const AppContext = createContext()
 
 export function AppWrapper2({ children }) {
-  const [sharedState, setSharedState] = useState()
-  setSharedState([])
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [sharedState, setSharedState] = useState([])
 
   useEffect(() => {
     async function fetchData() {
@@ -16,32 +16,29 @@ export function AppWrapper2({ children }) {
         cache: new InMemoryCache(),
       })
 
-
-      for(let i=0; i<17; i++){
-      const { data}  = await client.query({
-        query: gql`
-          query {
-            retrievePageArticles(page: 8) {
-              id
-              author
-              createdAt
-              score
-              updatedAt
-              title
-              text
-              type
-              url
+      for (let i = 0; i < 17; i++) {
+        const { data } = await client.query({
+          query: gql`
+            query {
+              retrievePageArticles(page: 8) {
+                id
+                author
+                createdAt
+                score
+                updatedAt
+                title
+                text
+                type
+                url
+              }
             }
-          }
-        `,
-      })
-      sharedState.push(...data.retrievePageArticles)
-    }
-
+          `,
+        })
+        sharedState.push(...data.retrievePageArticles)
+      }
     }
     fetchData()
   }, [])
-
 
   return (
     <AppContext.Provider value={sharedState}>{children}</AppContext.Provider>

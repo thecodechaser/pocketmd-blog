@@ -33,12 +33,10 @@ export function AppWrapper({ children }) {
         `,
       })
 
-      setSharedState( data.firstPageArticles)
-
+      setSharedState(data.firstPageArticles)
     }
     fetchData()
   }, [])
-
 
   return (
     <AppContext.Provider value={sharedState}>{children}</AppContext.Provider>

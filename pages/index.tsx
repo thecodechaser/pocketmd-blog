@@ -8,14 +8,13 @@ import { useAppContext2 } from '../context/stateTwo'
 
 const Home = () => {
   const state = useAppContext()
-  const state2 = useAppContext2();
-  console.log(state2)
+  const state2 = useAppContext2()
   if (state)
     return (
       <div className={styles.container}>
         <Header />
         <Hero />
-        <Posts posts={state}/>
+        <Posts posts={state} posts2={state2}/>
         <Footer />
       </div>
     )
