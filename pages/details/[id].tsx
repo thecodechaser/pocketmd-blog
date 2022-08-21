@@ -12,7 +12,7 @@ const Details = () => {
   const state = useAppContext()
   const router = useRouter()
   const ID = router.query.id
-  const post = state.posts.filter(
+  const post = state.filter(
     (element: { id: string | string[] | undefined }) => element.id == ID
   )
 

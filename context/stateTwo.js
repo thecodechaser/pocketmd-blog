@@ -1,12 +1,13 @@
-// context/state.js
+// context/stateTwo.js
 import { createContext, useContext } from 'react'
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client'
 import { useEffect, useState } from 'react'
 
 const AppContext = createContext()
 
-export function AppWrapper({ children }) {
+export function AppWrapper2({ children }) {
   const [sharedState, setSharedState] = useState()
+  setSharedState([])
 
   useEffect(() => {
     async function fetchData() {
@@ -15,10 +16,12 @@ export function AppWrapper({ children }) {
         cache: new InMemoryCache(),
       })
 
-      const { data } = await client.query({
+
+      for(let i=0; i<17; i++){
+      const { data}  = await client.query({
         query: gql`
           query {
-            firstPageArticles {
+            retrievePageArticles(page: 8) {
               id
               author
               createdAt
@@ -32,8 +35,8 @@ export function AppWrapper({ children }) {
           }
         `,
       })
-
-      setSharedState( data.firstPageArticles)
+      sharedState.push(...data.retrievePageArticles)
+    }
 
     }
     fetchData()
@@ -45,6 +48,6 @@ export function AppWrapper({ children }) {
   )
 }
 
-export function useAppContext() {
+export function useAppContext2() {
   return useContext(AppContext)
 }
