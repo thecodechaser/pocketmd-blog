@@ -39,9 +39,9 @@
 - Apollo GraphQL
 
 ## Standards
+
 - ESLint
 - Prettier
-
 
 ## Live version
 
@@ -52,11 +52,13 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+
 - A text editor(preferably Visual Studio Code)
 - Node
 - Web browser
 
 ### Install
+
 - [Git](https://git-scm.com/downloads)
 - [Node](https://nodejs.org/en/download/)
 
@@ -64,7 +66,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Clone the project
 
-```bash 
+```bash
 git clone git@github.com:thecodechaser/pocketmd-blog.git
 
 cd pocketmd-blog
@@ -76,11 +78,12 @@ cd pocketmd-blog
 npm install
 yarn install
 ```
+
 - To Start the development server
+
 ```bash
 npm run dev
 ```
-
 
 ## Visit And Open Files
 
@@ -97,7 +100,6 @@ npm run dev
 - GitHub: [@thecodechaser](https://github.com/thecodechaser)
 - Twitter: [@thecodechaser](https://twitter.com/thecodechaser)
 - LinkedIn: [thecodechaser](https://linkedin.com/in/thecodechaser)
-
 
 ## 🤝 Contributing
 
