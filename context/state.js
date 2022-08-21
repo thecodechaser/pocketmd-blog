@@ -32,7 +32,8 @@ export function AppWrapper({ children }) {
           }
         `,
       })
-      setSharedState({ posts: data.firstPageArticles })
+
+      setSharedState(data.firstPageArticles)
     }
     fetchData()
   }, [])
