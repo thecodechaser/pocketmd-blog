@@ -7,7 +7,7 @@ const Main = styled.div`
 `
 
 const Secondary = styled.div`
-display: flex;
+  display: flex;
   gap: 50px;
 `
 
