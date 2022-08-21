@@ -1,40 +1,51 @@
-import { ChangeEventHandler } from 'react'
+import { ChangeEventHandler } from "react";
 
+const ISSERVER = typeof window === "undefined";
 // 1
 const setDark = () => {
+
   // 2
-  localStorage.setItem('theme', 'dark')
+  localStorage.setItem("theme", "dark");
 
   // 3
-  document.documentElement.setAttribute('data-theme', 'dark')
-}
+  document.documentElement.setAttribute("data-theme", "dark");
+};
 
 const setLight = () => {
-  localStorage.setItem('theme', 'light')
-  document.documentElement.setAttribute('data-theme', 'light')
+  localStorage.setItem("theme", "light");
+  document.documentElement.setAttribute("data-theme", "light");
+};
+
+let storedTheme;
+// 4
+if(!ISSERVER) {
+   storedTheme = localStorage.getItem("theme");
 }
 
-// 4
-const storedTheme = localStorage.getItem('theme')
 
-const prefersDark =
-  window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+let prefersDark;
+
+if(!ISSERVER) {
+ prefersDark =
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches;
+}
 
 const defaultDark =
-  storedTheme === 'dark' || (storedTheme === null && prefersDark)
+  storedTheme === "dark" || (storedTheme === null && prefersDark);
 
 if (defaultDark) {
-  setDark()
+  setDark();
 }
 
 // 5
 const toggleTheme: ChangeEventHandler<HTMLInputElement> = (e) => {
   if (e.target.checked) {
-    setDark()
+    setDark();
   } else {
-    setLight()
+    setLight();
   }
-}
+};
 
 const DarkMode = () => {
   return (
@@ -44,6 +55,7 @@ const DarkMode = () => {
         <input
           type="checkbox"
           id="checkbox"
+
           // 6
           onChange={toggleTheme}
           defaultChecked={defaultDark}
@@ -52,7 +64,7 @@ const DarkMode = () => {
       </label>
       <span>🌒</span>
     </div>
-  )
-}
+  );
+};
 
-export default DarkMode
+export default DarkMode;
