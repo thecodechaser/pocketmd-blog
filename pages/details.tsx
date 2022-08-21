@@ -5,12 +5,13 @@ import Header from '../comps/header'
 const Details = () => {
   const state = useAppContext()
 
-  if (state) return (
-    <div>
-      <Header />
-      <Footer />
-    </div>
-  )
+  if (state)
+    return (
+      <div>
+        <Header />
+        <Footer />
+      </div>
+    )
 }
 
 export default Details
