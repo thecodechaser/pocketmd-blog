@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { P, H2, HR } from '../styles/comps/Posts.styled'
+import { P, H2, HR } from '../styles/comps/Posts.Styled'
 import PostCard from './postCard'
 
 interface PostsProps {
